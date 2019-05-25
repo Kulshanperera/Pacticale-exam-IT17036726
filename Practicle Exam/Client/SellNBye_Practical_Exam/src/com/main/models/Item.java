@@ -53,7 +53,7 @@ public String getItems(String itmName) {
 			st= con.createStatement();
 			sql = "insert into items (nameitems) values('"+ itmName +"')";
 					st.executeUpdate(sql);
-					res = "Successfully Retrived....";
+					res = "Successfully Added....";
 			}
 			catch (SQLException e) {
 				e.printStackTrace();
