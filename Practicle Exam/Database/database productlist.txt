@@ -1,0 +1,16 @@
+create database products;
+
+create TABLE productList( product_id INT AUTO_INCREMENT NOT NULL,
+	name varchar(25) NOT NULL, 
+	price int,
+	description varchar(100) NOT NULL,
+	PRIMARY KEY (product_id)
+);
+
+insert into productlist values("SmartWatch",10000,"About SmartWatch");
+insert into productlist values("TV",20000,"About TV"); 
+insert into productlist values("Mobile phone accessories",2500,"About Mobile Phone");
+insert into productlist values("PowerBank",2000,"About powerbank"); 
+insert into productlist values("SmartPhone Battery",1000,"About Battery");  
+
+select * from productlist;
